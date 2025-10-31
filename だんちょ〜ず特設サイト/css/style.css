@@ -1,0 +1,342 @@
+/* ===== 基本設定 ===== */
+body {
+  font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/背景.svg);
+  background-size: cover;      /* 画面いっぱいに表示 */
+  background-position: center; /* 中央に配置 */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* スクロールしても背景固定 */
+}
+
+  /* ===== ヘッダー ===== */
+  header {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+  }
+  
+  /* ===== ロゴ ===== */
+  .logo-img {
+    width: 230px;
+    height: auto;
+  }
+  nav {
+    margin-left: 80px;
+  }
+  nav ul {
+    font-size: 1.5rem;
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #481528;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #e6d16a;
+  }
+  
+  section {
+    padding: 120px 40px 80px; /* ヘッダー分余白を確保 */
+    min-height: 100vh;
+  }
+  
+  /* ===== メインエリア ===== */
+  main {
+    margin-top: 300px; /* 固定ヘッダー分の余白 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  /* ===== カルーセル ===== */
+  .carousel {
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+  }
+  
+  /* ===== カルーセル上タイトル ===== */
+  .carousel-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none;
+  }
+  
+  /* ===== キャラクター紹介セクション ===== */
+  .characters-section {
+    background-color: #d53a79;
+    padding: 120px 0;
+    text-align: center;
+    /* 上と下だけ丸い点線 */
+  border-top: 10px dotted #822849;
+  border-bottom: 10px dotted #822849;
+  /* 左右はなし */
+  border-left: none;
+  border-right: none;
+  }
+  
+  .section-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .character-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 40px;
+  }
+  
+  .character-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px 20px;
+    margin: 20px;
+    border: 4px solid transparent; /* 初期は透明 */
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    box-shadow 0.4s ease,
+    border 0.4s ease; /* cubic-bezierでぷるぷる感 */
+  }
+  
+  .character-card:hover {
+    transform: translateY(-10px) scale(1.02); /* 少し大きくしてぷるん */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    border: 8px solid #e6d16a;
+  }
+  
+  .character-img {
+    width: 80%;
+    max-width: 260px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  
+  .character-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #481528;
+    margin-bottom: 10px;
+  }
+  
+  .character-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    padding: 0 16px;
+  }
+  .goods-section {
+    padding: 80px 0;
+    text-align: center;
+  }
+ /* ===== グッズセクションのコンテナ ===== */
+.goods-container {
+  max-width: 600px;   /* 横幅を制限 */
+  margin: 0 auto;     /* 中央寄せ */
+  padding: 0 20px;    /* 左右余白 */
+  text-align: center;
+} 
+  .goods-section .section-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .goods-section .coming-soon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .coming-soon a {
+    font-size: 30px;
+    color: #d53a79;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .coming-soon a:hover {
+    color: #e6d16a;
+  }
+  .instagram-btn {
+    display: inline-block;
+    background-color: #e6d16a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .instagram-btn:hover {
+    background-color: #d53a79; /* ホバー時に少し暗く */
+    transform: translateY(-2px); /* ちょっと浮くアニメーション */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  footer {
+    font-size: 15px;
+    background-color: #e6d16a;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  /* ===== スマホ対応 ===== */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 12px 0;
+    }
+  
+    .logo-img {
+      width: 180px;
+      margin-bottom: 8px;
+    }
+    nav {
+      margin-left: 0;
+    }
+  
+    nav ul {
+      font-size: 1.1rem;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    main {
+      margin-top: 180px;
+      flex-direction: column;
+      padding: 0 12px;
+    }
+  
+    .carousel {
+      max-width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+  
+    .carousel-item img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .carousel-title {
+      font-size: 36px;
+      top: 30%;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+  
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    .characters-section {
+        padding-top: 60px; /* 元は120px、半分にして隙間を狭く */
+      }
+    .character-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+  
+    .character-card {
+      width: 75%;
+      border-radius: 3rem;
+    }
+    .character-card:hover {
+      border: 6px solid #e6d16a;
+    }
+    .character-card h3 {
+      font-size: 1.5rem;
+    }
+  
+    .character-card p {
+      font-size: 0.95rem;
+    }
+  
+    .character-name {
+      font-size: 22px;
+    }
+    .character-desc {
+      font-size: 15px;
+    }
+    .goods-container {
+      max-width: 100%;   /* 画面幅に合わせて狭く */
+      padding: 0 10px;
+    }
+  
+    .goods-section .section-title {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  
+    .goods-section .coming-soon {
+      font-size: 20px;
+    }
+  
+    .instagram-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    .coming-soon a {
+      font-size: 24px;
+    }
+    .instagram-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  footer {
+    font-size: 13px;
+    background-color: #e6d16a;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>だんちょ〜〜〜ず。公式サイト</title>
+    <meta name="description" content="だんちょ〜〜〜ず。の公式サイトへようこそ！最新情報、グッズ、ストーリーなどをお届けします。"><link rel="icon" href="img/ロゴ.svg" type="image/svg+xml">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- 自作CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/ロゴ.svg" class="logo-img" alt="ロゴ画像">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#story">ストーリー</a></li>
+        <li><a href="#characters">キャラクター</a></li>
+        <li><a href="#goods">グッズ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- カルーセル -->
+  <section id="story">
+    <main>
+      <div class="carousel-title">STORY</div>
+
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+
+          <!-- スライド1 -->
+          <div class="carousel-item active">
+            <picture>
+              <!-- スマホ用画像 -->
+              <source media="(max-width: 768px)" srcset="img/ストーリー1_スマホ版.png">
+              <!-- PC用画像 -->
+              <img src="img/ストーリー1.png" class="d-block w-100" alt="ストーリー">
+            </picture>
+          </div>
+
+          <!-- スライド2 -->
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/ストーリー2_スマホ版.png">
+              <img src="img/ストーリー2.png" class="d-block w-100" alt="スライド2">
+            </picture>
+          </div>
+
+          <!-- スライド3 -->
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/ストーリー3_スマホ版.png">
+              <img src="img/ストーリー3.png" class="d-block w-100" alt="スライド3">
+            </picture>
+          </div>
+
+        </div>
+
+        <!-- ナビボタン -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">前へ</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">次へ</span>
+        </button>
+      </div>
+    </main>
+  </section>
+  <section id="characters" class="characters-section">
+    <h2 class="section-title">CHARACTER</h2>
+    <div class="container">
+      <div class="row justify-content-center">
+  
+        <!-- キャラ1 -->
+        <div class="col-md-4 col-sm-12 character-card">
+          <img src="img/バニバニバニー.png" alt="キャラ1" class="character-img">
+          <h3 class="character-name">バニバニバニー団長</h3>
+          <p class="character-desc">
+            バニラーズ団の団長。<br>
+            そのほがらかな性格でみんなをあま〜く導く。
+          </p>
+        </div>
+  
+        <!-- キャラ2 -->
+        <div class="col-md-4 col-sm-12 character-card">
+          <img src="img/カ・カオ.png" alt="キャラ2" class="character-img">
+          <h3 class="character-name">カ・カオ団長</h3>
+          <p class="character-desc">
+            ショコラータ団の団長。<br>
+            ほろ苦く、時にあまい彼に魅了される者も多い。
+          </p>
+        </div>
+  
+        <!-- キャラ3 -->
+        <div class="col-md-4 col-sm-12 character-card">
+          <img src="img/ジューシー.png" alt="キャラ3" class="character-img">
+          <h3 class="character-name">ジューシー団長</h3>
+          <p class="character-desc">
+            フルーティ・パーティ団の団長。<br>
+            どじっこだが、そのかわいさで誰もが虜に。
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <section id="goods" class="goods-section">
+    <div class="goods-container">
+      <h2 class="section-title"><br><br>Goods</h2>
+      <p class="coming-soon">
+        ステッカー各種150円<br>
+        2つで200円！<br><br>
+        詳しくは 
+        <a href="https://www.instagram.com/danchos2025/" target="_blank" rel="noopener noreferrer" class="instagram-btn">
+          Instagram
+        </a> へ！
+      </p>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 だんちょ〜〜〜ず。公式サイト</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
